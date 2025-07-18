@@ -29,11 +29,6 @@ export async function POST(req: NextRequest) {
     }
 }
 
-export async function PUT(req: NextRequest) {
-  const { id, ...data } = await req.json();
-  const user = await prisma.user.update({ where: { id }, data });
-  return NextResponse.json(user);
-}
 
 export async function DELETE(req: NextRequest) {
   try {
