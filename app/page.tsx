@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -85,6 +86,7 @@ export default function Home() {
         <div className="text-white text-2xl font-bold tracking-tight">
           Gestión de Usuarios
         </div>
+        
         {/* Puedes agregar más elementos aquí si lo deseas */}
       </nav>
       <main className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-200 via-blue-100 to-white py-10">
@@ -158,7 +160,7 @@ export default function Home() {
                   htmlFor="second_Last_Name"
                   className="block text-indigo-700 font-semibold mb-2"
                 >
-                  Segundo Apellido
+                Segundo Apellido
                 </label>
                 <input
                   name="second_Last_Name"
